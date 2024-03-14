@@ -13,7 +13,7 @@ The pre-processing pipeline involves several steps, including frame extraction, 
 
 2. Face Detection:
 
-- Utilize the MTCNN (Multi-Task Cascaded Convolutional Networks) algorithm implemented in OpenCV to locate faces within the video frames.
+- Utilize the MTCNN (Multi-Task Cascaded Convolutional Networks) algorithm implemented with Tensorflow to locate faces within the video frames.
 
 3. Face Alignment:
 

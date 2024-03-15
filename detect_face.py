@@ -12,10 +12,10 @@ def detect_faces(input_folder, output_folder):
 
             faces = detector.detect_faces(image)
 
-            for i, face in enumerate(faces):
+            for i,face in enumerate(faces):
                 x, y, w, h = face['box']
                 face_image = image[y:y+h, x:x+w]
-                output_path = os.path.join(output_folder, f"{filename.split('.')[0]}_face_{i}.jpg")
+                output_path = os.path.join(output_folder, f"{filename.split('.')[0]}_face.jpg")
                 cv2.imwrite(output_path, face_image)
 
             print(f"Faces detected in {filename}.")

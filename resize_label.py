@@ -17,8 +17,13 @@ def resize_images_and_label(input_folder, output_folder, label):
 
             print(f"Image resized and labeled: {output_path}")
 
-input_folder = 'output_faces'
-output_folder = 'resized_images'
+# real
+# input_folder = 'real_output_faces'
+# output_folder = 'real_resized_images'
+
+# fake
+input_folder = 'dfake_output_faces'
+output_folder = 'dfake_resized_images'
 
 label = 0
 

@@ -6,7 +6,7 @@ def detect_faces(input_folder, output_folder):
     detector = MTCNN()
 
     for filename in os.listdir(input_folder):
-        if filename.endswith(".jpg"):
+        if filename.endswith(".jpg") or filename.endswith(".jpeg"):
             image_path = os.path.join(input_folder, filename)
             image = cv2.imread(image_path)
 
@@ -20,8 +20,13 @@ def detect_faces(input_folder, output_folder):
 
             print(f"Faces detected in {filename}.")
 
-input_folder = 'output_frame'
-output_folder = 'output_faces'
+# real
+# input_folder = 'real_output_frames'
+# output_folder = 'real_output_faces'
+
+# fake
+input_folder = 'dfake_output_frames'
+output_folder = 'dfake_output_faces'
 
 if not os.path.exists(output_folder):
     os.makedirs(output_folder)

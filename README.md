@@ -7,9 +7,6 @@ The pre-processing pipeline involves several steps, including frame extraction, 
 ### 1. Frame Extraction:
 
 - Extract frames from the input video at a rate of 30 fps, capturing every 4th frame.
-- Result:
-  - Input: 40sec video(23mb)
-  - Extracted 1200 frames
 
 ### 2. Face Detection:
 
@@ -26,3 +23,18 @@ The pre-processing pipeline involves several steps, including frame extraction, 
 ### 5. Labeling:
 
 - Annotate the resized face images with appropriate labels indicating whether they belong to real individuals (0) or synthetic/generated faces (1).
+
+## Result
+- Input :
+    - Real : 726 frames
+    - 1:1200 -> 300 ; 2:1056 -> 264 ; 3:648 -> 162;
+    - Fake : 292 frames
+    - 1:25 ; 2:488 -> 122 ; 3:500 -> 145 ;
+
+- Output :
+    - Real : 566 images
+    - 1:140 ;2:264 ;3:162 ;
+    - Fake : 289 images
+    - 1:22 ;2:122 ;3:145 ;
+ 
+### MTCNN accuracy = 89.1%

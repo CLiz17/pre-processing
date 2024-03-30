@@ -34,10 +34,12 @@ def extract_frames(video_path, output_folder, filename):
     print(f"Frames extracted from {video_path}: {frame_count}")
     
 # real
-# video_folder = "real_input_videos"
-# output_folder = "real_output_frames"
+video_folder = "real_input_videos"
+output_folder = "real_output_frames"
+
+extract_frames_from_folder(video_folder, output_folder)
 
 # fake
-video_folder = "deepfake_videos"
-output_folder = "dfake_output_frames"
-extract_frames_from_folder(video_folder, output_folder)
+# video_folder = "deepfake_videos"
+# output_folder = "dfake_output_frames"
+# extract_frames_from_folder(video_folder, output_folder)

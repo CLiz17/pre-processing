@@ -25,16 +25,16 @@ The pre-processing pipeline involves several steps, including frame extraction, 
 - Annotate the resized face images with appropriate labels indicating whether they belong to real individuals (0) or synthetic/generated faces (1).
 
 ## Result
+
 - Input :
-    - Real : 726 frames
-    - 1:1200 -> 300 ; 2:1056 -> 264 ; 3:648 -> 162;
-    - Fake : 292 frames
-    - 1:25 ; 2:488 -> 122 ; 3:500 -> 145 ;
+
+  - Real : 2360 frames extracted from 7 videos (7 subjects)
+  - Fake : 292 frames
 
 - Output :
-    - Real : 566 images
-    - 1:140 ;2:264 ;3:162 ;
-    - Fake : 289 images
-    - 1:22 ;2:122 ;3:145 ;
- 
+  - Real : 566 images
+  - 1:140 ;2:264 ;3:162 ;
+  - Fake : 289 images
+  - 1:22 ;2:122 ;3:145 ;
+
 ### MTCNN accuracy = 89.1%

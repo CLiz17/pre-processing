@@ -2,6 +2,7 @@ import os
 import cv2
 
 def resize_images_and_label(input_folder, output_folder, label):
+    count = 0
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
 
@@ -17,20 +18,26 @@ def resize_images_and_label(input_folder, output_folder, label):
             output_path = os.path.join(output_folder, labeled_filename)
             cv2.imwrite(output_path, resized_image)
 
+            count += 1
             print(f"Image resized and labeled: {output_path}")
+    return count
 
 # real
-input_folder = 'real_output_faces'
-output_folder = 'real_resized_images'
+# input_folder = 'real_output_faces'
+# output_folder = 'real_resized_images'
 
 # fake
-# input_folder = 'dfake_output_faces'
-# output_folder = 'dfake_resized_images'
+input_folder = 'dfake_output_faces'
+output_folder = 'dfake_resized_images'
 
 # real
-label = 0
+# label = 0
 
 # fake
-# label = 1
+label = 1
 
-resize_images_and_label(input_folder, output_folder, label)
+count = resize_images_and_label(input_folder, output_folder, label)
+
+
+print(f"Real Images : {count}")
+# print(f"Fake Images : {count}")

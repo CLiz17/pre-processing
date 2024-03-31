@@ -38,8 +38,3 @@ video_folder = "real_input_videos"
 output_folder = "real_output_frames"
 
 extract_frames_from_folder(video_folder, output_folder)
-
-# fake
-# video_folder = "deepfake_videos"
-# output_folder = "dfake_output_frames"
-# extract_frames_from_folder(video_folder, output_folder)

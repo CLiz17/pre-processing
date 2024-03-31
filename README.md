@@ -28,13 +28,9 @@ The pre-processing pipeline involves several steps, including frame extraction, 
 
 - Input :
 
-  - Real : 2360 frames extracted from 7 videos (7 subjects)
-  - Fake : 292 frames
+  - Real : 2500 images from 12 subjects
+  - Fake : 500 images from 11 subjects
 
 - Output :
-  - Real : 566 images
-  - 1:140 ;2:264 ;3:162 ;
-  - Fake : 289 images
-  - 1:22 ;2:122 ;3:145 ;
-
-### MTCNN accuracy = 89.1%
+  - Real :
+  - Fake :

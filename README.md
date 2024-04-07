@@ -24,13 +24,7 @@ The pre-processing pipeline involves several steps, including frame extraction, 
 
 - Annotate the resized face images with appropriate labels indicating whether they belong to real individuals (0) or synthetic/generated faces (1).
 
-## Result
+## Data
 
-- Input :
-
-  - Real : 2500 images from 12 subjects
-  - Fake : 500 images from 11 subjects
-
-- Output :
-  - Real :
-  - Fake :
+- Real : 2500 images from 12 subjects
+- Fake : 500 images from 11 subjects
